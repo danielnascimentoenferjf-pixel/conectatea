@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Agenda</title>
+
+    <link rel="stylesheet"
+          href="css/style.css">
+
+</head>
+
+<body>
+
+<header>
+
+    <h1>Agenda Escolar</h1>
+
+</header>
+
+<nav>
+
+    <a href="dashboard.html">Painel</a>
+
+    <a href="agenda.html">Agenda</a>
+
+    <a href="mensagens.html">Mensagens</a>
+
+    <a href="relatorios.html">Relatórios</a>
+
+    <button onclick="ativarModoEscuro()">
+        🌙
+    </button>
+
+    <button onclick="sairSistema()">
+        Sair
+    </button>
+
+</nav>
+
+<section class="banner">
+
+    <div class="card login-card">
+
+        <h2>Nova Atividade</h2>
+
+        <input type="date"
+               id="dataAgenda">
+
+        <input type="time"
+               id="horario">
+
+        <input
+            type="text"
+            id="atividade"
+            placeholder="Digite a atividade">
+
+        <button onclick="adicionarAgenda()">
+
+            Adicionar
+
+        </button>
+
+    </div>
+
+</section>
+
+<section class="cards"
+         id="listaAgenda"></section>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Relatórios</title>
+
+    <link rel="stylesheet"
+          href="css/style.css">
+
+</head>
+
+<body>
+
+<header>
+
+    <h1>Relatórios Pedagógicos</h1>
+
+</header>
+
+<nav>
+
+    <a href="dashboard.html">Painel</a>
+
+    <a href="agenda.html">Agenda</a>
+
+    <a href="mensagens.html">Mensagens</a>
+
+    <a href="relatorios.html">Relatórios</a>
+
+    <button onclick="ativarModoEscuro()">
+        🌙
+    </button>
+
+    <button onclick="sairSistema()">
+        Sair
+    </button>
+
+</nav>
+
+<section class="banner">
+
+    <div class="card login-card">
+
+        <h2>Novo Relatório</h2>
+
+        <select id="profissional">
+
+            <option value="">
+                Selecione o profissional
+            </option>
+
+            <option>Professora</option>
+
+            <option>Psicopedagoga</option>
+
+            <option>Psicóloga</option>
+
+            <option>Fonoaudióloga</option>
+
+            <option>Coordenadora</option>
+
+            <option>Cuidadora</option>
+
+            <option>Outro Profissional</option>
+
+        </select>
+
+        <input
+            type="text"
+            id="humor"
+            placeholder="Como a criança estava hoje?">
+
+        <textarea
+            id="relatorio"
+            rows="8"
+            placeholder="Descreva o acompanhamento">
+        </textarea>
+
+        <button onclick="salvarRelatorio()">
+
+            Salvar Relatório
+
+        </button>
+
+        <br><br>
+
+        <p id="resultadoHumor"></p>
+
+    </div>
+
+</section>
+
+<section class="cards"
+         id="listaRelatorios"></section>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>
